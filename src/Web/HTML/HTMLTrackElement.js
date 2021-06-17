@@ -64,7 +64,7 @@ exports.setLabel = function (label) {
 
 // ----------------------------------------------------------------------------
 
-exports["default"] = function (track) {
+exports.default_ = function (track) {
   return function () {
     return track["default"];
   };

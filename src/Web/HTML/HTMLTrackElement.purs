@@ -22,7 +22,7 @@ module Web.HTML.HTMLTrackElement
   , setSrclang
   , label
   , setLabel
-  , getDefault
+  , default_
   , setDefault
   , readyState
   ) where
@@ -97,7 +97,7 @@ foreign import setSrclang :: String -> HTMLTrackElement -> Effect Unit
 foreign import label :: HTMLTrackElement -> Effect String
 foreign import setLabel :: String -> HTMLTrackElement -> Effect Unit
 
-foreign import getDefault :: HTMLTrackElement -> Effect Boolean
+foreign import default_ :: HTMLTrackElement -> Effect Boolean
 foreign import setDefault :: Boolean -> HTMLTrackElement -> Effect Unit
 
 readyState :: HTMLTrackElement -> Effect ReadyState
